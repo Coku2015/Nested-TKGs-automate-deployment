@@ -44,7 +44,7 @@ $NestedESXiHostnameToIPs = @{
 
 # Nested ESXi VM Resources
 $NestedESXivCPU = "4"
-$NestedESXivMEM = "32" #GB
+$NestedESXivMEM = "24" #GB
 $NestedESXiCapacityvDisk = "1000" #GB
 
 # VCSA Deployment Configuration
