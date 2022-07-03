@@ -1,8 +1,3 @@
----
-layout: post
-title: 虚拟化嵌套TKGs实验环境自动化脚本
-tags: VMware, Tanzu
----
 
 学习了一段时间vSphere with Tanzu，发现功能非常强大，但是搭建这个学习环境成本略高。经过一些资料搜索和亲自试验，摸索出一些门道，记录在此篇博客中，方便那些希望学习vSphere with Tanzu的朋友快速搭建实验环境。
 
