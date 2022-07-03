@@ -1,0 +1,21 @@
+apiVersion: run.tanzu.vmware.com/v1alpha1
+kind: TanzuKubernetesCluster
+metadata:
+  name: sedemo-tkc-01
+  namespace: tkgs
+spec:
+  distribution:
+    version: v1.21
+  topology:
+    controlPlane:
+      class: best-effort-xsmall
+      count: 1
+      storageClass: tkgs-demo-storage-policy
+    workers:
+      class: best-effort-small
+      count: 2
+      storageClass: tkgs-demo-storage-policy
+  settings:
+    storage:
+      classes: ["tkgs-demo-storage-policy"]              #Named PVC storage classes
+      defaultClass: tkgs-demo-storage-policy
